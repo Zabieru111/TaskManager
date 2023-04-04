@@ -8,4 +8,6 @@ module zabieru.taskmanager {
 
     opens zabieru.taskmanager to javafx.fxml;
     exports zabieru.taskmanager;
+    exports zabieru.taskmanager.commandLine;
+    opens zabieru.taskmanager.commandLine to javafx.fxml;
 }
