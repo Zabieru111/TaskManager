@@ -5,6 +5,7 @@ module zabieru.taskmanager {
     requires org.controlsfx.controls;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
     opens zabieru.taskmanager to javafx.fxml;
     exports zabieru.taskmanager;

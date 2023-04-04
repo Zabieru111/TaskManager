@@ -24,7 +24,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'zabieru.taskmanager'
-    mainClass = 'zabieru.taskmanager.HelloApplication'
+    mainClass = 'zabieru.taskmanager.Application'
 }
 
 javafx {
