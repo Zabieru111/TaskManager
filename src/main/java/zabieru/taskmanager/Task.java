@@ -11,7 +11,8 @@ public class Task {
         this.date = date;
         this.priority = priority;
     }
-    public void markCompleted(){
+
+    public void markCompleted() {
         this.completed = true;
     }
 
