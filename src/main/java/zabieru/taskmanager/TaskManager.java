@@ -6,8 +6,14 @@ import java.util.List;
 public class TaskManager {
     private List<Task> TaskList = new ArrayList<>();
 
-    public void addTask(Task task) {
-        TaskList.add(task);
+    public TaskManager() {
+    }
+
+    public List addTask(Task task) {
+        if(FindTask(task.getName())==null) {
+            TaskList.add(task);
+        }
+        return TaskList;
     }
 
     public void removeTask(Task task) {
@@ -31,5 +37,8 @@ public class TaskManager {
             }
         }
         return null;
+    }
+    public List getTaskList(){
+        return TaskList;
     }
 }
